@@ -1,6 +1,6 @@
 Database - mongo
-    Exporting: /**/mongodump.exe path --uri="connection string" --db=urdus --out=F:/urdus path
-    Importing: /**/mongorestore.exe path --uri="conncection string" --db=urdus --drop F:\urdus\urdus-dump........
+    Exporting: /**/mongodump.exe path --uri="connection string (if db name given here remove db=urdus " --db=urdus --out=F:/urdus path
+    Importing: /**/mongorestore.exe path --uri="conncection string (if db name is admin,change it and remove db=urdus part " --db=urdus --drop F:\urdus\urdus-dump........
 
 
 Database - sql
