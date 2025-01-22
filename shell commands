@@ -5,10 +5,10 @@ Database - mongo
 
 Database - sql
     local: 
-        Exporting: /**/mysqldump.exe path -u username -p dbname/db_tablename > file.sql{path on local}
-        Importing: /**/mysql.exe path -u root -p dbname/db_tablename < file.sql{path on local}
+        Exporting: /**/mysqldump.exe path -u username -p dbname db_tablename > file.sql{path on local}
+        Importing: /**/mysql.exe path -u root -p dbname db_tablename < file.sql{path on local}
     server:
-        Exporting: mysqldump -u username -p dbname/db_tablename > file.sql{path of server}
-        Importing: mysql -u username -p dbname/db_tablename < file.sql{path of server}
+        Exporting: mysqldump -u username -p dbname db_tablename > file.sql{path of server}
+        Importing: mysql -u username -p dbname db_tablename < file.sql{path of server}
 
         Download from server : scp[username]@[server-ip]: filepath on server
